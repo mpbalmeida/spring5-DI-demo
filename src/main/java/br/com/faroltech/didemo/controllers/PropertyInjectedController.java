@@ -1,6 +1,6 @@
 package br.com.faroltech.didemo.controllers;
 
-import br.com.faroltech.didemo.services.GreetingServiceImpl;
+import br.com.faroltech.didemo.services.GreetingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
@@ -8,10 +8,10 @@ import org.springframework.stereotype.Controller;
 public class PropertyInjectedController {
 
     @Autowired
-    public GreetingServiceImpl greetingService;
+    public GreetingService greetingServiceImpl; //If i use the implementation i won't need the @Qualifier annotation
 
     public String sayHello() {
-        return greetingService.sayGreeting();
+        return greetingServiceImpl.sayGreeting();
     }
 
 }
