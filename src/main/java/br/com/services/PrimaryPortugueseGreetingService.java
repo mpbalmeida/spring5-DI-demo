@@ -1,4 +1,4 @@
-package br.com.faroltech.didemo.services;
+package br.com.services;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;

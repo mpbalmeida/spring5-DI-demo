@@ -1,6 +1,6 @@
 package br.com.faroltech.didemo.controllers;
 
-import br.com.faroltech.didemo.services.GreetingServiceImpl;
+import br.com.services.GreetingServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 

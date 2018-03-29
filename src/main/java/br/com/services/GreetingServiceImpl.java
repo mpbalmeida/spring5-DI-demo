@@ -1,4 +1,4 @@
-package br.com.faroltech.didemo.services;
+package br.com.services;
 
 import org.springframework.stereotype.Service;
 

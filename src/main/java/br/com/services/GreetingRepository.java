@@ -1,4 +1,4 @@
-package br.com.faroltech.didemo.services;
+package br.com.services;
 
 /**
  * Created by jt on 5/24/17.
