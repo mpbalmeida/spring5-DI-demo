@@ -1,0 +1,5 @@
+faroltech:
+  jms:
+    username: JMS username
+    password: 1234
+    url: SomeUrl
