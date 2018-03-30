@@ -1,0 +1,36 @@
+#this is a comment
+
+name: John
+
+names: #Comment
+  - John
+  - Paul
+  - Ringo
+
+pound_sign: "#" #with quotes
+
+#complex objects
+book:
+  author: Marcos
+  publisher: Alamo
+
+truth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no #no, false, FALSE
+
+string_val: "This is it's quote"
+
+colon_string: "Need to use: guess what, double quotes"
+
+include_new_lines: |
+  bla bla bla
+  la la la
+  he he he
+
+ignore_new_lines: >
+  this is one
+  long string
