@@ -4,6 +4,8 @@ import br.com.faroltech.didemo.controllers.ConstructorInjectedController;
 import br.com.faroltech.didemo.controllers.MyController;
 import br.com.faroltech.didemo.controllers.PropertyInjectedController;
 import br.com.faroltech.didemo.controllers.SetterInjectedController;
+import br.com.faroltech.didemo.examplebeans.FakeDataSource;
+import br.com.faroltech.didemo.examplebeans.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -16,9 +18,11 @@ public class DiDemoApplication {
 
         MyController controller = (MyController) ctx.getBean("myController");
 
-        System.out.println(controller.hello());
-        System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
-        System.out.println(ctx.getBean(SetterInjectedController.class).sayHello());
-        System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
+        FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
+
+        System.out.println(fakeDataSource.getUser());
+
+        FakeJmsBroker fakeJmsBroker = ctx.getBean(FakeJmsBroker.class);
+        System.out.println(fakeJmsBroker.getUser());
     }
 }

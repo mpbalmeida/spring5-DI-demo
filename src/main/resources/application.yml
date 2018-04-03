@@ -1,0 +1,12 @@
+faroltech:
+  jms:
+    username: JMS username
+    password: 1234
+    url: SomeUrl
+
+--- #file separator
+spring:
+  profiles: pt_BR
+faroltech:
+  jms:
+    username: JMS username BR
